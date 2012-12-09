@@ -91,7 +91,7 @@ BDD: class {
 
 Expectation: class <T> {
     a: T
-    inverted: Bool
+    inverted := false
 
     init: func (value: T, inv := false) {
         a = value
@@ -119,7 +119,7 @@ Expectation: class <T> {
         BDD assert((T == String && rb matches(a as String) != null) ^ inverted)
     }
 
-    not: Expectation<Bool> {
+    not: Expectation<T> {
         get {
             return expect(a, !inverted)
         }

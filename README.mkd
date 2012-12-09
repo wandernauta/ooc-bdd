@@ -7,16 +7,18 @@ uses. It allows for tests (and output) that almost read like prose:
 ```ooc
 import bdd
 
-describe("A string \"llama\"", ||
-    it("should not be \"alpaca\"", ||
+describe("A string 'llama'", ||
+    it("should not be 'alpaca'", ||
         expect("llama") not toBe("alpaca")
     )
 
-    it("should match \"^[a-m]+$\"", ||
+    it("should match ^[a-m]+$", ||
         expect("llama") toMatch("^[a-m]+$")
     )
 )
 ```
+
+See (and run!) the test.ooc file for more examples.
 
 # Features
 
@@ -25,7 +27,8 @@ describe("A string \"llama\"", ||
 - Invert expectations with `not`
 - Nicely colored output
 - Tallying of passed and failed tests and timing included
-- Put any code in your tests and specs
+- Put any code in your tests and specs.
+- Nested specs supported
 
 # License
 
