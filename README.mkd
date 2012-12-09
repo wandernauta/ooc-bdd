@@ -4,17 +4,19 @@
 testing syntax similar to the one [Jasmine](http://pivotal.github.com/jasmine/)
 uses. It allows for tests (and output) that almost read like prose:
 
-    import bdd
+```ooc
+import bdd
 
-    describe("A string \"llama\"", ||
-        it("should not be \"alpaca\"", ||
-            expect("llama") not toBe("alpaca")
-        )
-
-        it("should match \"^[a-m]+$\"", ||
-            expect("llama") toMatch("^[a-m]+$")
-        )
+describe("A string \"llama\"", ||
+    it("should not be \"alpaca\"", ||
+        expect("llama") not toBe("alpaca")
     )
+
+    it("should match \"^[a-m]+$\"", ||
+        expect("llama") toMatch("^[a-m]+$")
+    )
+)
+```
 
 # Features
 
