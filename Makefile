@@ -1,0 +1,2 @@
+all:
+	rock test

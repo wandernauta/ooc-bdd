@@ -1,0 +1,30 @@
+# ooc-bdd
+
+**ooc-bdd** is a BDD-style testing library for the ooc language. It uses a
+testing syntax similar to the one [Jasmine](http://pivotal.github.com/jasmine/)
+uses. It allows for tests (and output) that almost read like prose:
+
+    import bdd
+
+    describe("A string \"llama\"", ||
+        it("should not be \"alpaca\"", ||
+            expect("llama") not toBe("alpaca")
+        )
+
+        it("should match \"^[a-m]+$\"", ||
+            expect("llama") toMatch("^[a-m]+$")
+        )
+    )
+
+# Features
+
+- BDD-style syntax with expect()
+- Assertion-style syntax with require()
+- Invert expectations with `not`
+- Nicely colored output
+- Tallying of passed and failed tests and timing included
+- Put any code in your tests and specs
+
+# License
+
+ooc-bdd is distributed under the terms of the ISC license.
