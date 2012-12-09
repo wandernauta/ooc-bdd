@@ -46,7 +46,13 @@ it: func (name: String, test: Func) {
         Terminal setFgColor(Color red)
     }
 
-    "%s%s" printfln("  " times(BDD nest), name)
+    "%s%s" printf("  " times(BDD nest), name)
+
+    if (BDD failed == 0) {
+        println()
+    } else {
+        " (failed)" println()
+    }
 
     Terminal reset()
 }
