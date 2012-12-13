@@ -1,4 +1,6 @@
+use bdd
 import bdd
+
 import structs/ArrayList
 
 describe("A boolean expectation of true", ||
