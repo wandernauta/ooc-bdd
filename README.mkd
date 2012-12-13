@@ -1,5 +1,7 @@
 # ooc-bdd
 
+[![Build Status](https://travis-ci.org/wandernauta/ooc-bdd.png?branch=master)](https://travis-ci.org/wandernauta/ooc-bdd)
+
 **ooc-bdd** is a BDD-style testing library for the ooc language. It uses a
 testing syntax similar to the one [Jasmine](http://pivotal.github.com/jasmine/)
 uses. It allows for tests (and output) that almost read like prose:
